@@ -12,7 +12,7 @@ The company is particularly worried about misdiagnoses in female patients, as th
 
 The goal is to build a predictive model to assist GPs in diagnosing ADHD in children and adolescents, while also predicting the individual’s sex. The model will use functional MRI (fMRI) data, socio-demographic information, emotional data, and parenting information. The key challenges are:
 
-1. **Gender-based differences**: ADHD manifests differently in males and females, and females are often underdiagnosed.
+1. **Gender-based differences**: `ADHD` manifests differently in males and females, and females are often under-diagnosed.
 2. **Bias avoidance**: The model must not be biased, especially toward misdiagnosing female patients.
 3. **Explainability**: Due to GDPR requirements, the model must be interpretable (e.g., using SHAP or LIME).
 
@@ -27,24 +27,22 @@ The goal is to build a predictive model to assist GPs in diagnosing ADHD in chil
    - Normalize or standardize the data as needed.
 
 2. **Addressing Gender Bias**:
-   - Analyze the data for gender-based differences in ADHD diagnosis.
+   - Analyze the data for gender-based differences in `ADHD` diagnosis.
    - Ensure the dataset is balanced in terms of sex and diagnosis labels.
    - Use techniques like stratified sampling or oversampling (e.g., SMOTE) to address imbalances.
 
 3. **Model Development**:
    - Build a model to predict:
      - **Sex** (binary classification: male/female).
-     - **ADHD diagnosis** (binary classification: ADHD/no ADHD).
-   - Consider using multi-task learning or separate models for each task.
-   - Use interpretable models (e.g., decision trees, logistic regression) or post-hoc explainability tools (e.g., SHAP, LIME) for complex models like neural networks or ensemble methods.
+     - **ADHD diagnosis** (binary classification: ADHD/NO ADHD).
 
 4. **Bias Mitigation**:
    - Evaluate the model’s performance across genders to ensure fairness.
    - Use fairness metrics (e.g., equal opportunity, demographic parity) to detect and mitigate bias.
-   - Adjust the model or data if bias is detected (e.g., reweighting samples, adversarial debiasing).
+   - Adjust the model or data if bias is detected.
 
 5. **Model Explainability**:
-   - Use SHAP (SHapley Additive exPlanations) or LIME (Local Interpretable Model-agnostic Explanations) to explain the model’s predictions.
+   - Use `SHAP` (SHapley Additive exPlanations) or `LIME` (Local Interpretable Model-agnostic Explanations) to explain the model’s predictions.
    - Ensure that the model’s decisions are interpretable and can be justified to stakeholders (e.g., doctors, patients).
 
 6. **Evaluation**:
@@ -74,16 +72,16 @@ The goal is to build a predictive model to assist GPs in diagnosing ADHD in chil
    - Combine socio-demographic, emotional, and parenting data with fMRI features.
 
 4. **Model Selection**:
-   - Start with simple, interpretable models (e.g., logistic regression, decision trees).
+   - Starting with simple, interpretable models (e.g., logistic regression, decision trees).
    - Experiment with more complex models (e.g., random forests, gradient boosting, neural networks) if needed.
-   - Use explainability tools like SHAP or LIME to interpret complex models.
+   - Use explainability tools like `SHAP` or `LIME` to interpret complex models.
 
 5. **Bias Detection and Mitigation**:
    - Evaluate the model’s performance separately for males and females.
    - Use fairness metrics to detect bias and adjust the model accordingly.
 
 6. **Explainability**:
-   - Use SHAP or LIME to explain individual predictions and overall model behavior.
+   - Use `SHAP` or `LIME` to explain individual predictions and overall model behavior.
    - Provide clear, interpretable explanations for stakeholders.
 
 7. **Evaluation and Validation**:
@@ -94,21 +92,21 @@ The goal is to build a predictive model to assist GPs in diagnosing ADHD in chil
 
 ## **Tools and Techniques**
 
-- **Programming Language**: Python (preferred) or R.
+- **Programming Language**: `Python`.
 - **Libraries**:
-  - Data manipulation: Pandas, NumPy.
-  - Visualization: Matplotlib, Seaborn.
-  - Machine learning: Scikit-learn, XGBoost, LightGBM, TensorFlow/PyTorch (if using neural networks).
-  - Explainability: SHAP, LIME.
-  - Fairness: AI Fairness 360, Fairlearn.
-- **Evaluation Metrics**: Accuracy, precision, recall, F1-score, AUC-ROC, fairness metrics.
+  - Data manipulation: `Pandas`, `NumPy`.
+  - Visualization: `Matplotlib`, `Seaborn`.
+  - Machine learning: `Scikit-learn`.
+  - Explainability: `SHAP`, `LIME`.
+  - Fairness: `AI Fairness 360`, `Fairlearn`.
+- **Evaluation Metrics**: `Accuracy`, `Precision`, `Recall`, `F1-score`.
 
 ---
 
 ## **Deliverables**
 
 1. A cleaned and preprocessed dataset.
-2. A trained model for predicting sex and ADHD diagnosis.
+2. A trained model for predicting `SEX` and `ADHD` diagnosis.
 3. A bias evaluation report.
 4. Explainability analysis using SHAP or LIME.
 5. A final report summarizing the methodology, results, and limitations.
