@@ -49,6 +49,7 @@ The goal is to build a predictive model to assist GPs in diagnosing ADHD in chil
    - Evaluate the model’s performance using metrics like accuracy, precision, recall, F1-score, and AUC-ROC.
    - Pay special attention to the model’s performance on female patients to avoid misdiagnoses.
    - Perform cross-validation to ensure robustness.
+   - Hyperparameter tuning.
 
 7. **Deployment Considerations**:
    - Ensure the model complies with GDPR requirements (e.g., data privacy, explainability).
